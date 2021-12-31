@@ -1,3 +1,4 @@
 solmate=lib/solmate/src/
 ds-test/=lib/ds-test/src/
 openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/
+hardhat/=node_modules/hardhat/

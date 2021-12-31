@@ -4,6 +4,8 @@ pragma solidity >=0.8.10;
 import {Ownable} from "openzeppelin-contracts/access/Ownable.sol";
 import {ERC20} from "solmate/tokens/ERC20.sol";
 
+import "hardhat/console.sol";
+
 contract Contract is ERC20, Ownable {
     string public greeting;
 
@@ -12,6 +14,7 @@ contract Contract is ERC20, Ownable {
     }
 
     function setGreeting(string calldata newGreeting) external onlyOwner {
+        console.log(newGreeting);
         greeting = newGreeting;
     }
 }
