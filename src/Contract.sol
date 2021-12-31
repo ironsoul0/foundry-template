@@ -9,8 +9,8 @@ import "hardhat/console.sol";
 contract Contract is ERC20, Ownable {
     string public greeting;
 
-    constructor(string memory _greeting) ERC20("MyToken", "MTK", 18) {
-        greeting = _greeting;
+    constructor() ERC20("MyToken", "MTK", 18) {
+        greeting = "Happy new year!";
     }
 
     function setGreeting(string calldata newGreeting) external onlyOwner {
